@@ -1,0 +1,39 @@
+#db loja com venda física e online
+#criar db doce delicia
+
+create database doce_delicia;
+use doce_delicia;
+
+#funcionarios
+create table funcionarios(
+	id_funcionario int auto_increment unique primary key,
+	nome_completo varchar(50) not null,
+    turno enum ('manha', 'tarde') not null,
+    funcao enum ('atendente', 'gerente') not null
+);
+
+#cadastro de produtos
+create table produtos(
+	id_produto int auto_increment unique primary key,
+    produto_nome varchar(20) not null,
+    produto_descricao varchar(50),
+    produto_tipo enum ('comida', 'bebida') not null,
+    produto_class enum ('fabricacao propria', 'industrializado'),
+    produto_data_registro date,
+    produto_preco float not null
+);
+
+#saida
+create table saida(
+	id_saida int auto_increment unique primary key,
+    saida_data timestamp,
+    saida_vendedor int not null,
+    saida_produto int not null,
+    saida_qtdade int not null default (1),
+    saida_desconto_aplicado float not null,
+    saida_local enum ('loja', 'ifood') not null,
+    saida_consumo enum ('local', 'entrega') not null,
+    saida_pgto enum ('dinheiro', 'pix', 'cartao') not null,
+    constraint fk_saida_produto foreign key (saida_produto) references produtos(id_produto),
+    constraint fk_saida_vendedor foreign key (saida_vendedor) references funcionarios(id_funcionario)
+);    
