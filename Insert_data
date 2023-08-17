@@ -1,0 +1,36 @@
+#insert data
+use doce_delicia;
+#funcionarios
+insert into funcionarios (nome_completo, turno, funcao) values ('Maria Joana da Silva', 'manha', 'atendente');
+insert into funcionarios (nome_completo, turno, funcao) values ('Manuela Francisca de Souza', 'manha', 'atendente');
+insert into funcionarios (nome_completo, turno, funcao) values ('Solange Matos', 'tarde', 'atendente');
+insert into funcionarios (nome_completo, turno, funcao) values ('Cecilia Carolina dos Anjos', 'tarde', 'gerente');
+
+insert into produtos (produto_nome, produto_tipo, produto_class, produto_preco) values ('copo da felicidade', 'comida', 'fabricacao propria', '22');
+insert into produtos (produto_nome, produto_tipo, produto_class, produto_preco) values ('mini copo', 'comida', 'fabricacao propria', '18');
+insert into produtos (produto_nome, produto_tipo, produto_class, produto_preco) values ('coxinha de morango', 'comida', 'fabricacao propria', '18');
+insert into produtos (produto_nome, produto_tipo, produto_class, produto_preco) values ('suco del valle', 'bebida', 'industrializado', '13');
+insert into produtos (produto_nome, produto_tipo, produto_class, produto_preco) values ('chocolate quente', 'bebida', 'fabricacao propria', '16');
+insert into produtos (produto_nome, produto_tipo, produto_class, produto_preco) values ('milk shake', 'bebida', 'fabricacao propria', '16');
+insert into produtos (produto_nome, produto_tipo, produto_class, produto_preco) values ('fondue de morango', 'comida', 'fabricacao propria', '32');
+
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('1', '1', '1', '0', 'loja', 'local', 'pix');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('1', '2', '2', '0', 'loja', 'local', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('1', '3', '3', '2', 'loja', 'entrega', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('2', '5', '1', '0', 'loja', 'local', 'dinheiro');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('2', '1', '1', '0', 'ifood', 'entrega', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('2', '4', '2', '0', 'ifood', 'entrega', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('3', '7', '1', '1', 'loja', 'local', 'pix');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('3', '6', '2', '0', 'loja', 'local', 'dinheiro');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('3', '2', '2', '0', 'ifood', 'entrega', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('4', '1', '4', '3', 'loja', 'entrega', 'pix');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('4', '7', '1', '0', 'loja', 'local', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('4', '5', '2', '0', 'loja', 'local', 'pix');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('4', '2', '1', '0', 'ifood', 'entrega', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('3', '5', '3', '0', 'loja', 'local', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('3', '2', '2', '0', 'ifood', 'entrega', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('1', '1', '2', '0', 'loja', 'entrega', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('2', '3', '2', '0', 'loja', 'entrega', 'pix');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('1', '4', '2', '0', 'loja', 'local', 'pix');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('3', '6', '2', '1', 'loja', 'local', 'cartao');
+insert into saida (saida_vendedor, saida_produto, saida_qtdade, saida_desconto_aplicado, saida_local, saida_consumo, saida_pgto) values ('3', '2', '2', '2', 'ifood', 'entrega', 'cartao');
