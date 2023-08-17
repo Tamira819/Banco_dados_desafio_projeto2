@@ -1,0 +1,22 @@
+#queries de relevância gerencial
+
+#1. saída de produto por turno
+select turno, produto_nome as produto, saida_qtdade as quantidade
+from saida, funcionarios, produtos
+where saida_vendedor=id_funcionario and id_produto=saida_produto
+order by quantidade desc, turno;
+
+#2. saída de local (loja X Ifood) por turno:
+select saida_local as vendido, turno
+from saida, funcionarios
+where id_funcionario=saida_vendedor;
+
+#3. desconto X funcao (quem está dando descontos, as atendentes ou a gerente?):
+select saida_desconto_aplicado as desconto, funcao
+from saida, funcionarios
+where id_funcionario=saida_vendedor;
+
+#valor de venda X valor de desconto concedido:
+select sum(produto_preco) as venda_total, sum(saida_desconto_aplicado)
+from saida, produtos
+where id_produto=saida_produto;
